@@ -40,7 +40,8 @@
 }
 .main{
     /* border:5px solid red; */
-    max-width:1327px;
+    /* max-width:1400px; */
+    width:100%;
     margin-top:69px;
 }
 .main .top{
@@ -90,13 +91,15 @@
     color:white;
     text-align: center;
     margin:70px 0;
+    /* border:1px solid white; */
 }
 .main .middle .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items:stretch;
-    width:1000px;
+    /* align-items:stretch; */
+    max-width:1000px;
+    /* border:1px solid red; */
     margin-top:30px;
 }
 
@@ -117,6 +120,9 @@
     font-size:1.4em;
     padding-bottom:50px;
     margin-right: 30px;
+    flex-wrap: wrap;
+    
+    /* box-sizing: border-box; */
 
 }
 
@@ -127,10 +133,98 @@
 /* .main .middle .images .img-card:nth-child(4){
     align-self: baseline;
 } */
-.main .middle .images .img-card:nth-child(5){
+/* .main .middle .images .img-card:nth-child(3){
     margin-right: 0;
 }
+.main .middle .images .img-card:nth-child(5){
+    margin-right: 0;
+} */
 
 .main .middle .images .img-card img{
     width: 100%;
+}
+
+.main .bottom{
+    /* border:2px solid orange; */
+    /* background-color: #000; */
+    color:white;
+    background-image: url("./images/img-locations-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    min-height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.main .bottom h2{
+    font-size: 2em;
+    margin-bottom:15px;
+}
+.main .bottom .locations{
+    /* border:2px solid purple; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 120px;
+}
+/* .main .bottom h3{
+    display: block;
+    
+} */
+.main .bottom .location-card{
+    /* border:2px solid red; */
+    width:300px;
+    margin:40px;
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    line-height: 2.7;
+    flex-wrap:wrap;
+    flex-shrink:5;
+    min-width:300px;
+}
+.main .bottom .location-card h3{
+    font-size:2em;
+
+}
+.main .bottom .location-card p{
+    font-size:1.4em;
+}
+/* .main .bottom .location-card:nth-child(3){
+    margin-right:0;
+} */
+footer{
+    /* height:300px; */
+    background-color: #000;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 2.5;
+}
+footer h2{
+    font-size:2.4em;
+}
+footer h5{
+    font-size:1.2em;
+}
+footer p{
+    font-size:1.2em;
+    font-weight: bold;
+}
+footer .footer-text{
+    display:flex;
+    /* border:1px solid red; */
+    margin-top:20px;
+}
+footer .footer-text p{
+    left:0;
+    align-self: flex-start;
+    margin-left:20px;
+    font-weight: bold;
 }
